@@ -27,6 +27,62 @@ angular
         templateUrl: 'views/about.html',
         controller: 'AboutCtrl'
       })
+      .when('/Tax', {
+        templateUrl: 'views/tax.html',
+        controller: 'TaxCtrl'
+      })
+      .when('/TaxReturns', {
+        templateUrl: 'views/taxreturns.html',
+        controller: 'TaxreturnsCtrl'
+      })
+      .when('/fileTransfer', {
+        templateUrl: 'views/filetransfer.html',
+        controller: 'FiletransferCtrl'
+      })
+      .when('/Notifications', {
+        templateUrl: 'views/notifications.html',
+        controller: 'NotificationsCtrl'
+      })
+      .when('/forms', {
+        templateUrl: 'views/forms.html',
+        controller: 'FormsCtrl'
+      })
+      .when('/billing', {
+        templateUrl: 'views/billing.html',
+        controller: 'BillingCtrl'
+      })
+      .when('/clients', {
+        templateUrl: 'views/clients.html',
+        controller: 'ClientsCtrl'
+      })
+      .when('/CPABilling', {
+        templateUrl: 'views/cpabilling.html',
+        controller: 'CpabillingCtrl'
+      })
+      .when('/CPANotifications', {
+        templateUrl: 'views/cpanotifications.html',
+        controller: 'CpanotificationsCtrl'
+      })
+      .when('/CPAClients', {
+        templateUrl: 'views/cpaclients.html',
+        controller: 'CpaclientsCtrl'
+      })
+      .when('/AdminCustomers', {
+        templateUrl: 'views/admincustomers.html',
+        controller: 'AdmincustomersCtrl'
+      })
+      .when('/AdminNotifications', {
+        templateUrl: 'views/adminnotifications.html',
+        controller: 'AdminnotificationsCtrl'
+      })
+      .when('/AdminBilling', {
+        templateUrl: 'views/adminbilling.html',
+        controller: 'AdminbillingCtrl'
+      })
+      .when('/Contact', {
+        templateUrl: 'views/contact.html',
+        controller: 'ContactCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });
