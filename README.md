@@ -4,6 +4,16 @@ CFOPortal
 Website for Express Angular Framework:
 http://start.jcolemorrison.com/building-an-angular-and-express-app-part-1/
 
+node.js
+mongoDB
+Ruby
+Windows SDK
+
+
+
+
+
+
 To start site
 
 Two command line tabs open. 
