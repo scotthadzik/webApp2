@@ -4,7 +4,6 @@ var favicon = require('static-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
-var db = require('./database');
 
 var app = express();
 
@@ -56,7 +55,7 @@ if (app.get('env') === 'production') {
 /**
  * Routes
  */
-var router = require('./router')(app);
+//var router = require('./router')(app);
 
 // Error Handling
 app.use(function(err, req, res, next) {
