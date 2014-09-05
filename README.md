@@ -22,6 +22,8 @@ Problems installing Yeoman on Windows
 		http://ponderingdeveloper.com/2013/03/08/preparing-a-windows-machine-to-use-yeoman/
 
 
+
+
 Windows SDK
 compass
 
@@ -36,6 +38,12 @@ client folder
   $ grunt serve
     localhost:9000
     Close that web browser tab
+
+If you get error Cannot find where you keep your Bower packages run: bower install
+
+
+
+
 
 Server folder 
   $ npm test
