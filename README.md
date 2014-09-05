@@ -30,9 +30,10 @@ compass
 
 To start site
 
-Two command line tabs open. 
+Three command line tabs open.
   One inside client folder 
   one inside server folder.
+  One is root
 
 client folder
   $ grunt serve
@@ -41,11 +42,10 @@ client folder
 
 If you get error Cannot find where you keep your Bower packages run: bower install
 
-
-
-
-
 Server folder 
   $ npm test
     localhost:3000. 
     THIS one is being served by your express server!
+
+Root
+  mongod --dbpath data\db\ --logpath data\logs\mongodb.log --logappend

@@ -1,1 +1,69 @@
-<p>This is the taxReturns view.</p>
+<div class="taxReturns-container">
+    <div class="col-md-12">
+        <h3 class="taxReturns-header">Signup as a New User</h3>
+        <hr>
+        <br>
+    </div>
+
+    <div class="taxReturns-form">
+
+        <form class="form-horizontal">
+
+
+            <!-- Text input-->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="firstname">First Name</label>
+                <div class="col-md-5">
+                    <input id="firstname" name="firstname" ng-model="taxReturns.user.firstname" type="text" placeholder="Cole" class="form-control input-md">
+
+                </div>
+            </div>
+
+            <!-- Text input-->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="lastname">Last Name</label>
+                <div class="col-md-5">
+                    <input id="lastname" name="lastname" ng-model="taxReturns.user.lastname" type="text" placeholder="Morrison" class="form-control input-md">
+
+                </div>
+            </div>
+
+            <!-- Text input-->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="email">Email</label>
+                <div class="col-md-5">
+                    <input id="email" name="email" ng-model="taxReturns.user.email" type="text" placeholder="me@jcolemorrison.com" class="form-control input-md">
+
+                </div>
+            </div>
+
+            <!-- Password input-->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="password1">Password</label>
+                <div class="col-md-5">
+                    <input id="password1" name="password1" ng-model="taxReturns.user.password1" type="password" placeholder="" class="form-control input-md">
+
+                </div>
+            </div>
+
+            <!-- Password input-->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="password2">Retype Password</label>
+                <div class="col-md-5">
+                    <input id="password2" name="password2" ng-model="taxReturns.user.password2" type="password" placeholder="" class="form-control input-md">
+
+                </div>
+            </div>
+
+            <!-- Button -->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="taxReturns"></label>
+                <div class="col-md-5">
+                    <button ng-click="taxReturns.submit()" id="taxReturns" name="taxReturns" class="btn btn-success btn-block">Signup!</button>
+                </div>
+            </div>
+
+        </form>
+    </div>
+
+</div>

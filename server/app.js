@@ -5,6 +5,11 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
+/**
+ * Route Imports
+ */
+var taxReturns = require('./router/routes/taxReturns');
+
 var app = express();
 
 app.use(favicon());
@@ -55,7 +60,9 @@ if (app.get('env') === 'production') {
 /**
  * Routes
  */
-//var router = require('./router')(app);
+app.use('/taxReturns', taxReturns);
+
+
 
 // Error Handling
 app.use(function(err, req, res, next) {
