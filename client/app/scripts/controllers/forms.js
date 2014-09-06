@@ -1,17 +1,10 @@
 'use strict';
 
-/**
- * @ngdoc function
- * @name clientApp.controller:FormsCtrl
- * @description
- * # FormsCtrl
- * Controller of the clientApp
- */
-angular.module('clientApp')
-  .controller('FormsCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
-  });
+angular.module('clientApp') // make sure this is set to whatever it is in your client/scripts/app.js
+	.controller('formsCtrl', function ($scope) { // add dependencies
+
+	    $scope.name = "John";
+
+
+
+	});

@@ -24,20 +24,21 @@
     <div class="container">
       <div class="header">
         <ul class="nav nav-pills pull-right">
-          <li class="active"><a ng-href="#">Home</a></li>
-          <li><a ng-href="#/taxReturns">Tax Returns</a></li>
-          <li><a ng-href="#/fileTransfer">File Transfer</a></li>
-          <li><a ng-href="#/notifications">Notifications</a></li>
-          <li><a ng-href="#/forms">Forms</a></li>
-          <li><a ng-href="#/billing">Billing</a></li>
-          <li><a ng-href="#/cpaHome">Home</a></li>
-          <li><a ng-href="#/cpaClients">CPA Clients</a></li>
-          <li><a ng-href="#/cpaBilling">CPA Billing</a></li>
-          <li><a ng-href="#/cpaNotifications">CPANotifications</a></li>
-          <li><a ng-href="#/adminCustomers">Admin Customers</a></li>
-          <li><a ng-href="#/adminNotifications">Admin Notifications</a></li>
-          <li><a ng-href="#/adminBilling">Admin Billing</a></li>
-          <li><a ng-href="#/contactUs">Contact</a></li>
+          <li ng-show="selected === 1" ng-class="{ active:tab === 1 }"><a ng-href="#" ng-click="tab =1">Home</a></li>
+          <li ng-show="selected === 1" ng-class="{ active:tab === 2 }"><a ng-href="#/taxReturns" ng-click="tab =2">Tax Returns</a></li>
+          <li ng-show="selected === 1" ng-class="{ active:tab === 3 }"><a ng-href="#/fileTransfer" ng-click="tab =3">File Transfer</a></li>
+          <li ng-show="selected === 1" ng-class="{ active:tab === 4 }"><a ng-href="#/notifications" ng-click="tab =4">Notifications</a></li>
+          <li ng-show="selected === 1" ng-class="{ active:tab === 5 }"><a ng-href="#/forms" ng-click="tab =5">Forms</a></li>
+          <li ng-show="selected === 1" ng-class="{ active:tab === 6 }"><a ng-href="#/billing" ng-click="tab =6">Billing</a></li>
+          <li ng-show="selected === 2" ng-class="{ active:tab === 1 }"><a ng-href="#/cpaHome" ng-click="tab =1">Home</a></li>
+          <li ng-show="selected === 2" ng-class="{ active:tab === 2 }"><a ng-href="#/cpaClients" ng-click="tab =2">CPA Clients</a></li>
+          <li ng-show="selected === 2" ng-class="{ active:tab === 3 }"><a ng-href="#/cpaBilling" ng-click="tab =3">CPA Billing</a></li>
+          <li ng-show="selected === 2" ng-class="{ active:tab === 4 }"><a ng-href="#/contactUs" ng-click="tab =4">Contact</a></li>
+          <li ng-show="selected === 2" ng-class="{ active:tab === 5 }"><a ng-href="#/cpaNotifications" ng-click="tab =5">CPANotifications</a></li>
+          <li ng-show="selected === 3" ng-class="{ active:tab === 1 }"><a ng-href="#/adminCustomers" ng-click="tab =1">Admin Customers</a></li>
+          <li ng-show="selected === 3" ng-class="{ active:tab === 2 }"><a ng-href="#/adminNotifications" ng-click="tab =2">Admin Notifications</a></li>
+          <li ng-show="selected === 3" ng-class="{ active:tab === 3 }"><a ng-href="#/adminBilling" ng-click="tab =3">Admin Billing</a></li>
+
 
         </ul>
         <h3 class="text-muted">client</h3>
@@ -46,6 +47,13 @@
       <div ng-view=""></div>
 
       <div class="footer">
+          <!--TODO: Remove this section that simulates users-->
+          <ul class="nav nav-pills pull-right" ng-init="selected = 1">
+              <li ng-class="{ active:selected === 1 }"><a ng-click="selected = 1">Client</a></li>
+              <li ng-class="{ active:selected === 2 }"><a ng-click="selected = 2">CPA</a></li>
+              <li ng-class="{ active:selected === 3 }"><a ng-click="selected = 3">Admin</a></li>
+          </ul>
+
         <p><i class="fa fa-heart"></i></i> from the Yeoman team</p>
       </div>
     </div>
@@ -98,21 +106,17 @@
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
         <script src="scripts/controllers/main.js"></script>
-        <script src="scripts/controllers/about.js"></script>
-        <script src="scripts/controllers/tax.js"></script>
         <script src="scripts/controllers/taxreturns.js"></script>
         <script src="scripts/controllers/filetransfer.js"></script>
         <script src="scripts/controllers/notifications.js"></script>
         <script src="scripts/controllers/forms.js"></script>
         <script src="scripts/controllers/billing.js"></script>
-        <script src="scripts/controllers/clients.js"></script>
         <script src="scripts/controllers/cpabilling.js"></script>
         <script src="scripts/controllers/cpanotifications.js"></script>
         <script src="scripts/controllers/cpaclients.js"></script>
         <script src="scripts/controllers/admincustomers.js"></script>
         <script src="scripts/controllers/adminnotifications.js"></script>
         <script src="scripts/controllers/adminbilling.js"></script>
-        <script src="scripts/controllers/contact.js"></script>
         <script src="scripts/controllers/contactus.js"></script>
         <script src="scripts/controllers/cpahome.js"></script>
         <!-- endbuild -->

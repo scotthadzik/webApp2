@@ -14,7 +14,7 @@ angular.module('clientApp') // make sure this is set to whatever it is in your c
  
 		// In our taxReturns.html, we'll be using the ng-model
 		// attribute to populate this object.
-	 taxReturns.user = user = {};
+	    taxReturns.user = user = {};
  
 		// This is our method that will post to our server.
 	 taxReturns.submit = function () {
