@@ -47,5 +47,8 @@ Server folder
     localhost:3000. 
     THIS one is being served by your express server!
 
+    if it stops at test.sh install Cygwin
+
+
 Root
   mongod --dbpath data\db\ --logpath data\logs\mongodb.log --logappend
