@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js">
+<html class="no-js" xmlns="http://www.w3.org/1999/html">
   <head>
     <meta charset="utf-8">
     <title></title>
@@ -41,10 +41,12 @@
 
 
         </ul>
-        <h3 class="text-muted">client</h3>
+        <!--<h3 class="text-muted">client</h3>-->
       </div>
-
       <div ng-view=""></div>
+
+
+
 
       <div class="footer">
           <!--TODO: Remove this section that simulates users-->
@@ -107,7 +109,10 @@
 
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
-        <script src="scripts/controllers/main.js"></script>
+        <script src="scripts/Highcharts/js/highcharts.js"></script>
+        <script src="scripts/Highcharts/js/modules/exporting.js"></script>
+        <script src="scripts/Highcharts/js/highcharts-3d.js"></script>
+        <script src=scripts/controllers/main.js></script>
         <script src="scripts/controllers/taxreturns.js"></script>
         <script src="scripts/controllers/filetransfer.js"></script>
         <script src="scripts/controllers/notifications.js"></script>

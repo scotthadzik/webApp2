@@ -10,7 +10,7 @@ angular.module('clientApp') // make sure this is set to whatever it is in your c
  
 		// Here we're creating a scope for our Signup page.
 		// This will hold our data and methods for this page.
-		$scope taxReturns = taxReturns = {};
+		//$scope taxReturns = taxReturns = {};
  
 		// In our taxReturns.html, we'll be using the ng-model
 		// attribute to populate this object.
