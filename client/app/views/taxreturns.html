@@ -1,165 +1,58 @@
-<ul class="nav nav-stacked fixed" id="sidebar">
-    <li>
-        <a href="#GroupA">Group A</a>
-        <ul class="nav nav-stacked fixed">
-            <li><a href="#GroupASub1">Sub-Group 1</a></li>
-            <li><a href="#GroupASub2">Sub-Group 2</a></li>
-        </ul>
-    </li>
-    <!-- Same for Group B & C -->
-</ul>
-
 <div class="row">
     <!--Nav Bar -->
-    <nav class="col-xs-3">
-        <div class="fixed">
-            Nav Placeholder<br/>
-            Stays on Top!
-        </div>
+    <nav class="col-xs-3 bs-docs-sidebar">
+        <ul id="sidebar" class="nav nav-stacked fixed">
+            <li>
+                <a href="#GroupA">Group A</a>
+                <ul class="nav nav-stacked">
+                    <li><a href="#GroupASub1">Sub-Group 1</a></li>
+                    <li><a href="#GroupASub2">Sub-Group 2</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#GroupB">Group B</a>
+                <ul class="nav nav-stacked">
+                    <li><a href="#GroupBSub1">Sub-Group 1</a></li>
+                    <li><a href="#GroupBSub2">Sub-Group 2</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#GroupC">Group C</a>
+                <ul class="nav nav-stacked">
+                    <li><a href="#GroupCSub1">Sub-Group 1</a></li>
+                    <li><a href="#GroupCSub2">Sub-Group 2</a></li>
+                </ul>
+            </li>
+        </ul>
     </nav>
     <!--Main Content -->
     <div class="col-xs-9">
         <section id="GroupA" class="group">
-            <h3>2013 TaxDocuments</h3>
+            <h3>Group A</h3>
             <div id="GroupASub1" class="subgroup">
-                <h4>TaxReturn 1040</h4>
-                <h4>W-2 Forms</h4>
-                <h4>1099-INT</h4>
-                <h4>1099-R</h4>
-                <h4>1099-S</h4>
-                <h4>1099-G</h4>
+                <h4>Group A Sub 1</h4>
             </div>
             <div id="GroupASub2" class="subgroup">
-                <h4>2012</h4>
+                <h4>Group A Sub 2</h4>
             </div>
         </section>
-        <section id="GroupB" class="group"></section>
-        <section id="GroupC" class="group"></section>
+        <section id="GroupB" class="group">
+            <h3>Group B</h3>
+            <div id="GroupBSub1" class="subgroup">
+                <h4>Group B Sub 1</h4>
+            </div>
+            <div id="GroupBSub2" class="subgroup">
+                <h4>Group B Sub 2</h4>
+            </div>
+        </section>
+        <section id="GroupC" class="group">
+            <h3>Group C</h3>
+            <div id="GroupCSub1" class="subgroup">
+                <h4>Group C Sub 1</h4>
+            </div>
+            <div id="GroupCSub2" class="subgroup">
+                <h4>Group C Sub 2</h4>
+            </div>
+        </section>
     </div>
 </div>
-
-
-
-
-<!--<ul id="taxSideBar" class="side-nav nav-pills">-->
-    <!--<li><a href="#">Section 1</a></li>-->
-    <!--<li><a href="#">Section 2</a></li>-->
-    <!--<li><a href="#">Section 3</a></li>-->
-    <!--<li><a href="#">Section 4</a></li>-->
-    <!--<li><a href="#">Section 5</a></li>-->
-    <!--<li><a href="#">Section 6</a></li>-->
-<!--</ul>-->
-
-
-
-
-
-
-
-
-
-
-<!--<div class="well sidebar-nav" ng-app="navList">-->
-    <!--<ul class="nav nav-list" ng-controller="TaxReturnsCtrl">-->
-        <!--<li ng-class="navClass('home')"><a href='#/home'>Home</a></li>-->
-        <!--<li ng-class="navClass('about')"><a href='#/about'>About Us</a></li>-->
-        <!--<li ng-class="navClass('contact')"><a href='#/contact'>Contact Us</a></li>-->
-    <!--</ul>-->
-<!--</div>-->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!--<div class="taxReturns-container">-->
-    <!--<div class="col-md-12">-->
-        <!--<h3 class="taxReturns-header">Signup as a New User</h3>-->
-        <!--<hr>-->
-        <!--<br>-->
-    <!--</div>-->
-
-    <!--<div class="taxReturns-form">-->
-
-        <!--<form class="form-horizontal">-->
-
-
-            <!--&lt;!&ndash; Text input&ndash;&gt;-->
-            <!--<div class="form-group">-->
-                <!--<label class="col-md-4 control-label" for="firstname">First Name</label>-->
-                <!--<div class="col-md-5">-->
-                    <!--<input id="firstname" name="firstname" ng-model="taxReturns.user.firstname" type="text" placeholder="Cole" class="form-control input-md">-->
-
-                <!--</div>-->
-            <!--</div>-->
-
-            <!--&lt;!&ndash; Text input&ndash;&gt;-->
-            <!--<div class="form-group">-->
-                <!--<label class="col-md-4 control-label" for="lastname">Last Name</label>-->
-                <!--<div class="col-md-5">-->
-                    <!--<input id="lastname" name="lastname" ng-model="taxReturns.user.lastname" type="text" placeholder="Morrison" class="form-control input-md">-->
-
-                <!--</div>-->
-            <!--</div>-->
-
-            <!--&lt;!&ndash; Text input&ndash;&gt;-->
-            <!--<div class="form-group">-->
-                <!--<label class="col-md-4 control-label" for="email">Email</label>-->
-                <!--<div class="col-md-5">-->
-                    <!--<input id="email" name="email" ng-model="taxReturns.user.email" type="text" placeholder="me@jcolemorrison.com" class="form-control input-md">-->
-
-                <!--</div>-->
-            <!--</div>-->
-
-            <!--&lt;!&ndash; Password input&ndash;&gt;-->
-            <!--<div class="form-group">-->
-                <!--<label class="col-md-4 control-label" for="password1">Password</label>-->
-                <!--<div class="col-md-5">-->
-                    <!--<input id="password1" name="password1" ng-model="taxReturns.user.password1" type="password" placeholder="" class="form-control input-md">-->
-
-                <!--</div>-->
-            <!--</div>-->
-
-            <!--&lt;!&ndash; Password input&ndash;&gt;-->
-            <!--<div class="form-group">-->
-                <!--<label class="col-md-4 control-label" for="password2">Retype Password</label>-->
-                <!--<div class="col-md-5">-->
-                    <!--<input id="password2" name="password2" ng-model="taxReturns.user.password2" type="password" placeholder="" class="form-control input-md">-->
-
-                <!--</div>-->
-            <!--</div>-->
-
-            <!--&lt;!&ndash; Button &ndash;&gt;-->
-            <!--<div class="form-group">-->
-                <!--<label class="col-md-4 control-label" for="taxReturns"></label>-->
-                <!--<div class="col-md-5">-->
-                    <!--<button ng-click="taxReturns.submit()" id="taxReturns" name="taxReturns" class="btn btn-success btn-block">Signup!</button>-->
-                <!--</div>-->
-            <!--</div>-->
-
-        <!--</form>-->
-    <!--</div>-->
-
-<!--</div>-->

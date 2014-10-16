@@ -17,6 +17,11 @@ angular.module('clientApp')
         ];
     });
 
+$('body').scrollspy({
+    target: '.bs-docs-sidebar',
+    offset: 40
+});
+
 //var navList = angular.module('navList', []);
 //
 //navList.controller('navCtrl', ['$scope', '$location', function ($scope, $location) {
