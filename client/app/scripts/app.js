@@ -16,7 +16,8 @@ angular
     'ngRoute',
     'ngSanitize',
     'ngTouch',
-    'ui.sortable'
+    'ui.sortable',
+    'ui.bootstrap'
   ])
   .config(function ($routeProvider) {
     $routeProvider
@@ -26,7 +27,7 @@ angular
       })
       .when('/taxReturns', {
         templateUrl: 'views/taxreturns.html',
-        controller: 'TaxreturnsCtrl'
+        controller: 'TaxReturnsCtrl'
       })
       .when('/fileTransfer', {
         templateUrl: 'views/filetransfer.html',
