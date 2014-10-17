@@ -17,7 +17,8 @@ angular
     'ngSanitize',
     'ngTouch',
     'ui.sortable',
-    'ui.bootstrap'
+    'ui.bootstrap',
+    'mgcrea.ngStrap'
   ])
   .config(function ($routeProvider) {
     $routeProvider
@@ -29,6 +30,7 @@ angular
         templateUrl: 'views/taxreturns.html',
         controller: 'TaxReturnsCtrl'
       })
+
       .when('/fileTransfer', {
         templateUrl: 'views/filetransfer.html',
         controller: 'FiletransferCtrl'
@@ -77,6 +79,8 @@ angular
         templateUrl: 'views/cpahome.html',
         controller: 'CpahomeCtrl'
       })
+
+
       .otherwise({
         redirectTo: '/'
       });

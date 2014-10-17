@@ -8,13 +8,19 @@
  * Controller of the clientApp
  */
 angular.module('clientApp')
-    .controller('TaxReturnsCtrl', function ($scope) {
+    .controller('TaxReturnsCtrl', function ($scope, $location, $anchorScroll) {
         $scope.awesomeThings = [
             'HTML5 Boilerplate',
             'AngularJS',
             'Karma',
             'SitePoint'
         ];
+        $scope.scrollTo = function(id) {
+            $location.hash(id);
+            console.log($location.hash());
+            $anchorScroll();
+        };
+
     });
 
 $('body').scrollspy({
